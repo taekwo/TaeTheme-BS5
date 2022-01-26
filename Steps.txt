@@ -1,0 +1,23 @@
+1. Install Gulp Globally 
+npm install --global gulp-cli
+
+
+2. installs npm-check-updates globally
+npm install -g npm-check-updates
+
+3. runs it against your package.json and updates the dependency versions
+npm-check-updates -u
+
+4. Force delete the node modules folder
+rm -fo node_modules
+
+5. Re-install NPM
+npm install
+
+
+6. Fix
+npm audit fix
+
+
+2. Install Gulp Locally
+npm install --save-dev gulp

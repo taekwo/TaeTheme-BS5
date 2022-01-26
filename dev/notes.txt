@@ -1,0 +1,14 @@
+For editor Tabs:
+- no tabs;
+- tab size = 4;
+- indent size = 4.
+- limit CSS files width to 80 characters
+
+
+Naming Classes
+- Name something based on what it is, not on how it looks or behaves
+- Camel case must not be used for classes.
+
+
+Gulp Plugins
+- stylelint

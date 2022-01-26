@@ -1,0 +1,47 @@
+/*!
+ * Project Custom Stylesheet
+ * Author : Ahmed Abdel Moula
+ */
+
+// -------------------------------------------------- \\
+    // Base
+// -------------------------------------------------- \\
+@import "base/_variables.scss"; 
+@import "base/_fonts.scss";
+@import "base/_base.scss";
+@import "base/_forms.scss";
+@import "base/_snippets.scss"; 
+
+// -------------------------------------------------- \\
+    // Modules
+// -------------------------------------------------- \\
+/* Headings */      @import "modules/_headings.scss";
+/* Buttons */      @import "modules/_buttons.scss";
+/* Modals */        @import "modules/_modals.scss";
+/* Dividers */      @import "modules/_dividers.scss";
+/* Text Blocks */   @import "modules/_text.blocks.scss";
+
+// -------------------------------------------------- \\
+    // Header & Footer
+// -------------------------------------------------- \\
+@import "layout/_main.scss"; 
+@import "layout/_header.scss"; 
+@import "layout/_footer.scss"; 
+
+// -------------------------------------------------- \\
+    // Pages
+// -------------------------------------------------- \\
+/* Homepage */
+@import "pages/_page.home.scss";
+
+// -------------------------------------------------- \\
+    // RTL, Variables & Snippets
+// -------------------------------------------------- \\
+@import "miscs/_rtl.scss"; 
+
+// -------------------------------------------------- \\
+    // Components
+// -------------------------------------------------- \\
+@import "components/_search.form.scss"; 
+@import "components/_bread.crumb.scss"; 
+@import "components/_owl.carousel.scss"; 

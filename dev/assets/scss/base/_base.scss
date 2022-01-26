@@ -1,0 +1,50 @@
+/* ----------------------------------------------------
+    Resetting
+---------------------------------------------------- */
+a, a:hover, a:focus { 
+    text-decoration: none; 
+    color: inherit; 
+    outline: none; 
+}
+img { 
+    vertical-align: top; 
+}
+p, ul, address, 
+h1, h2, h3, h4, h5, h6 { 
+    padding: 0px; 
+    margin: 0px; 
+    list-style: none; 
+}
+
+/* ---------------------------------------------
+    Typography
+--------------------------------------------- */
+p {
+    padding: 0px;
+    line-height: 1.5rem;
+    margin: 0px 0px 15px;
+}
+
+ul, ol {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+blockquote {
+    padding: 15px 15px 15px 45px;
+    font-size: 18px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    border-right: 5px solid $tae-red;
+    background: lighten($tae-dark, 75%);
+    &:after {
+        display: block;
+        content: "\f10e";
+        font: normal normal normal 24px/1 FontAwesome;
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,28 @@
+/* ---------------------------------------------
+    Icon Elemenet
+--------------------------------------------- */
+%icon-element {        
+    color: inherit;
+    display: block;
+    speak: none;
+    font-style: normal;    
+    font-variant: normal;
+    font-weight: 300;
+    line-height: inherit;
+    font-family: FontAwesome;  
+    text-transform: none;    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+/* ---------------------------------------------
+    For Floated Elements
+--------------------------------------------- */
+@mixin consistent {
+    &:after {
+        content: ' ';
+        clear: both;
+        display: block;
+    }
+}
+

@@ -1,0 +1,69 @@
+/* ---------------------------------------------
+    Dividers
+--------------------------------------------- */
+.div-tringles {
+    margin: 15px auto 30px;
+    border-top: 1px dashed $tae-gray;
+    position: relative;
+    &:after {
+        display:block;
+        position:absolute;
+        content:'';
+        top: -7px;
+        background: inherit;
+        box-shadow: -14px 14px 0 $tae-gray, 14px -14px 0 $tae-gray;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        -webkit-transform: translateX(-50%) rotate(45deg);
+        transform: translateX(-50%) rotate(45deg);
+    }
+}
+
+.div-coner {
+    position: relative;
+    &:before {
+        display: block;
+        position:absolute;
+        content:'';
+        bottom: -45px;
+        width: 50px;
+        height: 50px;
+    }
+    &:before {
+        right: 0;
+        background-image: -webkit-linear-gradient(top left, #fff 50%, #ddd 50%);
+        background-image: linear-gradient(315deg, #fff 50%, #ddd 50%);
+    }
+}
+
+.div-dots {
+    margin: 45px auto;
+    border-top: 1px solid #ccc;
+    position: relative;
+    &:before {
+        display: block;
+        position: absolute;
+        content: '';
+        bottom: -7px;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: red;
+        box-shadow: 30px 0 #ccc, -30px 0 #ccc;
+    }
+}
+
+.div-bar {
+    padding: 0 30px;
+    border-radius: 100% / 97%;
+    border: 0;
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, #fff, #8c8b8b, #fff);
+    background-image: -moz-linear-gradient(left, #fff, #8c8b8b, #fff);
+    background-image: -ms-linear-gradient(left, #fff, #8c8b8b, #fff);
+    background-image: -o-linear-gradient(left, #fff, #8c8b8b, #fff);
+}

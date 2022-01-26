@@ -1,0 +1,44 @@
+/* ---------------------------------------------
+    Breadcrumb
+--------------------------------------------- */
+.breadcrumb-wrapper {
+    background: $tae-beige;
+    .breadcrumb {
+        padding: 5px 0px;
+        margin: 0px;
+        font-size :12px;
+        width: 100%;
+        border-radius: 0px;
+        background: none;
+        li {
+            margin: 0px;
+            &:first-child:before {
+                margin-right: 5px;
+                display: inline-block;
+                content: "\f015";
+                font-family: 'FontAwesome';
+            }
+        }
+        .breadcrumb-item + .breadcrumb-item::before {            
+            font-family: 'FontAwesome';
+        }
+    }
+}
+
+.rtl {
+    .breadcrumb-wrapper {        
+        .breadcrumb {     
+            font-size: 13px;       
+            li {
+                padding-left: 0;
+                &:first-child:before {
+                    margin-right: 0;
+                    margin-left: 5px;                    
+                }
+            }
+            .breadcrumb-item + .breadcrumb-item::before {                            
+                padding-left: .5rem;
+            }
+        }
+    }   
+}

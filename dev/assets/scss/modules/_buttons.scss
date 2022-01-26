@@ -1,0 +1,15 @@
+button, .btn {
+  &:focus {
+  outline: none;
+}
+}
+
+.btn-xs {
+    height: 24px;
+    line-height: 20px;
+    font-size: 12px;
+    padding: 0 0.5em;
+    .fa {
+      margin-left: 7px;
+    }
+  }

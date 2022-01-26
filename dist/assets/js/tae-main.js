@@ -1,0 +1,5 @@
+/*!
+ * Project Custom JS
+ * Author : Ahmed Abdel Moula
+ */
+$(document).ready((function(){function o(){$("body").toggleClass("no-scroll")}function t(){$("#tae-srch").slideToggle("fast"),$(".srch-btn").toggleClass("active")}$((function(){$('[data-toggle="tooltip"]').tooltip()})),$(".srch-btn").on("click",(function(n){t(),o(),n.stopPropagation()})),$(".srch-close").on("click",(function(n){t(),o(),n.stopPropagation()})),$("#top-animate").click((function(){return $("html, body").animate({scrollTop:0},"slow"),!1})),$(".navbar-toggler").on("click",(function(){o()}))})),$(document).on("click",(function(){$(".hamburger-toggle").find(".hamburger").toggleClass("active")})),$(document).on("scroll",(function(){$(document).scrollTop()>86?$("#tae-header").addClass("shrink"):$("#tae-header").removeClass("shrink")}));

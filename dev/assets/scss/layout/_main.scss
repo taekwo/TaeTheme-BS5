@@ -1,0 +1,28 @@
+/* ---------------------------------------------
+    Main Layout
+--------------------------------------------- */
+body {
+    color: #333;
+    overflow-x: hidden;
+    font: 16px 'Open Sans', sans-serif;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+#tae-main {
+    margin: 45px auto;
+}
+
+/* ------------------------------------------------------------
+    Targeting Firefox Only
+------------------------------------------------------------ */
+@media screen and (min--moz-device-pixel-ratio:0) {    
+}
+/* ------------------------------------------------------------
+    Targeting Chrome & Safari Only
+------------------------------------------------------------ */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}

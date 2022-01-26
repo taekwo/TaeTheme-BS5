@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/* Color Definition */
+/*
+    Created on : Dec 5, 2017, 2:14:03 PM
+    Author     : Administrator
+*/
+.flex-gallery {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -4px auto 30px;
+}
+
+.image-rate {
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+  margin: 2.5px;
+  flex-grow: 1;
+}
+
+.image-rate:after {
+  content: '⤢';
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 28px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
+.image-rate:hover:after {
+  opacity: 1;
+}
+.image-rate img {
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+#fullimage {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: -webkit-zoom-out;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#fullimage img {
+  width: auto;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border: 5px solid #fff;
+  box-shadow: 0 0 15px #000;
+}
+#fullimage a {
+  font-size: 42px;
+  color: #fff;
+  cursor: pointer;
+  top: calc(50% - 22px);
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  position: absolute;
+  transition: all 0.2s linear;
+}
+#fullimage a i {
+  vertical-align: top;
+}
+#fullimage a:hover {
+  color: #EF3054;
+}
+#fullimage .next {
+  left: 45px;
+}
+#fullimage .prev {
+  right: 45px;
+}
+
+@media (max-width: 480px) {
+  .image-rate {
+    width: calc(50% - 5px);
+    height: calc(50vw - 5px);
+  }
+}
+
+/*# sourceMappingURL=flex-gallery.css.map */

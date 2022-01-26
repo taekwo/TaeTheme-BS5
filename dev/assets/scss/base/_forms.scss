@@ -1,0 +1,14 @@
+
+.form-control { 
+    padding-top: 0px; 
+    padding-bottom: 0px; 
+}
+
+.form-control:focus, 
+.has-error .form-control:focus, 
+a.btn-default:focus, 
+a.btn-default:hover {
+    box-shadow: none; 
+    background: inherit; 
+    border-color: #66afe9 !important;
+}

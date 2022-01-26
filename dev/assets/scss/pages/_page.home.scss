@@ -1,0 +1,20 @@
+/* ----------------------------------------------------
+    Homepage
+---------------------------------------------------- */
+#home-slider {
+    margin-bottom: 2rem;
+}
+
+/* HomeSlider RTL Pages ---------------------------- */
+.rtl {
+    #home-slider {
+        .owl-item {
+            figcaption {
+                direction: rtl;
+                text-align: right;
+                right: 90px;
+                left: auto;
+            }
+        }
+    }
+}

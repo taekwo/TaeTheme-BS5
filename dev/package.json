@@ -1,0 +1,30 @@
+{
+  "name": "bs-taetemp",
+  "version": "1.0.0",
+  "description": "Taekwo Template, based on Bootstrap, automated by Gulb",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taekwo",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-import": "0.0.2",
+    "gulp-minifier": "^3.5.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-string-replace": "^1.1.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-zip": "^5.1.0",
+    "sass": "^1.49.0"
+  },
+  "dependencies": {
+    "gulp-livereload": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "gulp-tinypng-compress": "^1.2.5",
+    "static-server": "^2.2.1"
+  }
+}

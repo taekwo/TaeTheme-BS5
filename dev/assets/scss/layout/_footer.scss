@@ -1,0 +1,30 @@
+/* ---------------------------------------------
+    Button :: Scroll to Top
+--------------------------------------------- */
+#top-animate {
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    position: absolute;
+    top: -14px;
+    left: calc(50% - 14px);
+    background: $tae-dark;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 24px;
+    transition: all 0.2s linear;
+    &:hover {
+        background: $tae-green;
+    }
+}
+
+/* ---------------------------------------------
+    Footer Componenets
+--------------------------------------------- */
+#tae-footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    position: relative;
+    border-top: 2px solid $tae-dark;
+}
